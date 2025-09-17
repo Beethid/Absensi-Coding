@@ -20,7 +20,7 @@ body {
   border-radius: 10px;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 80%;
+  width: 90%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -41,6 +41,7 @@ body {
   background-color: white;
   outline: black;
   border: none;
+  width:100%
 }
 
 .bungkus select {
