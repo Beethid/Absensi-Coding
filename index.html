@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="https://script.google.com/macros/s/AKfycbwpdEWnVoFZn-Ras-WOnvquQkdIMjvF8L6r8u0Axw2TXt6fELU8KfZwlcptafMGVimceQ/exec" class="container" method="POST">
+      <h3>Absensi Kehadiran Ekskul Coding</h3>
+      <div class="bungkus">
+        <label for="tanggal">Tanggal</label>
+        <input type="date" required name="tanggal" id="tanggal" />
+      </div>
+      <div class="bungkus">
+        <label for="nama">Nama</label>
+        <input
+          required
+          type="text"
+          name="nama"
+          id="nama"
+          placeholder="Ferdian Syach Agustian Ramadhan"
+        />
+      </div>
+      <div class="bungkus">
+        <label for="kelas">Kelas</label>
+        <select required name="kelas" id="kelas">
+          <option value="">-- Kelas --</option>
+          <option value="X">X</option>
+          <option value="XI">XI</option>
+          <option value="XII">XII</option>
+        </select>
+      </div>
+      <div class="bungkus">
+        <label for="jurusan">Jurusan</label>
+        <select required name="jurusan" id="jurusan">
+          <option value="">-- Jurusan --</option>
+          <option value="TKJ">TKJ</option>
+          <option value="DKV">DKV</option>
+          <option value="Elind">ELIND</option>
+          <option value="Grafika">GRAFIKA</option>
+          <option value="TITL">TITL</option>
+          <option value="Lasum">LASUM</option>
+          <option value="LasKap">LASKAP</option>
+          <option value="Liskap">LISKAP</option>
+          <option value="TPM">TPM</option>
+          <option value="Meskap">MESKAP</option>
+          <option value="DRBK">DRBK</option>
+        </select>
+      </div>
+      <div class="bungkus">
+        <label for="bidang">Bidang</label>
+        <select required name="bidang" id="bidang">
+          <option value="">-- Pilih Bidang Anda</option>
+          <option value="Web Design">Web Design</option>
+          <option value="IT Software">IT Software</option>
+          <option value="ITNSA">ITNSA</option>
+          <option value="CyberSec">Cyber Security</option>
+          <option value="NetCab">Net Cabling</option>
+          <option value="Cloud Computing">Cloud Computing</option>
+        </select>
+      </div>
+      <div class="bungkus">
+        <label for="keterangan">Keterangan</label>
+        <div class="radio">
+          <input
+            required
+            type="radio"
+            id="hadir"
+            name="myOption"
+            value="Hadir"
+          />
+          <label for="hadir">Hadir</label><br />
+
+          <input
+            required
+            type="radio"
+            id="Sakit"
+            name="myOption"
+            value="Sakit"
+          />
+          <label for="Sakit">Sakit</label><br />
+
+          <input required type="radio" id="Izin" name="myOption" value="Izin" />
+          <label for="Izin">Izin</label><br />
+
+          <input
+            required
+            type="radio"
+            id="Alpha"
+            name="myOption"
+            value="Alpha"
+          />
+          <label for="Alpha">Alpha</label>
+        </div>
+      </div>
+      <div class="bungkus1" id="alasan">
+        <label for="lasan">Alasan </label>
+        <input type="text" name="lasan" id="lasan" />
+      </div>
+
+      <button type="submit">Kirim</button>
+    </form>
+    <script>
+      let radios = document.querySelectorAll('input[name="myOption"]');
+      let alasan = document.getElementById("alasan");
+
+      radios.forEach((radio) => {
+        radio.addEventListener("change", function () {
+          if (this.value !== "Hadir" && this.value != "Sakit") {
+            alasan.classList.add("alasan");
+          } else {
+            alasan.classList.remove("alasan");
+          }
+        });
+      });
+
+      function tombol() {
+        alert("Terkirim");
+      }
+    </script>
+  </body>
+</html>
