@@ -4,17 +4,36 @@
   font-family: Poppins;
   padding: 0;
   box-sizing: border-box;
-  background-color: whit;
+}
+
+.navbar .logo img {
+  width: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.137);
+  padding: 1rem;
+  backdrop-filter: blur(0.3rem);
+
 }
 
 body {
   overflow-x: hidden;
-  background:linear-gradient(45deg, rgb(113, 204, 161), rgb(102, 102, 238));
+  background:linear-gradient(90deg, rgb(216, 216, 216), rgb(141, 171, 252));
   display: flex;
   width: 100vw;
   min-height: 100dvh;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 90px 2rem 2rem 1rem;
   align-items: center;
 }
 .container {
@@ -92,4 +111,12 @@ button {
 
 button:hover {
   background-color: rgb(241, 241, 241);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p a {
+  text-decoration: none;
 }

@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="https://script.google.com/macros/s/AKfycbwpdEWnVoFZn-Ras-WOnvquQkdIMjvF8L6r8u0Axw2TXt6fELU8KfZwlcptafMGVimceQ/exec" class="container" method="POST">
-      <h3>Absensi Kehadiran Ekskul Coding</h3>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image/tkj.png" alt="" />
+      </div>
+      <div class="judul">
+        <h2>Absensi Ekskul Coding</h2>
+      </div>
+      <div class="logo">
+        <img src="image/logo-ekskul.png" alt="" />
+      </div>
+    </nav>
+
+    <form
+      action="https://script.google.com/macros/s/AKfycbwpdEWnVoFZn-Ras-WOnvquQkdIMjvF8L6r8u0Axw2TXt6fELU8KfZwlcptafMGVimceQ/exec"
+      class="container"
+      method="POST"
+    >
+      <h3></h3>
       <div class="bungkus">
         <label for="tanggal">Tanggal</label>
         <input type="date" required name="tanggal" id="tanggal" />
@@ -102,23 +118,14 @@
 
       <button type="submit">Kirim</button>
     </form>
-    <script>
-      let radios = document.querySelectorAll('input[name="myOption"]');
-      let alasan = document.getElementById("alasan");
-
-      radios.forEach((radio) => {
-        radio.addEventListener("change", function () {
-          if (this.value !== "Hadir" && this.value != "Sakit") {
-            alasan.classList.add("alasan");
-          } else {
-            alasan.classList.remove("alasan");
-          }
-        });
-      });
-
-      function tombol() {
-        alert("Terkirim");
-      }
-    </script>
+    <div class="footer">
+      <p>
+        &copy;Copyright by<br /><a
+          href="https://www.instagram.com/FerdianSyach_xtkj1/#"
+          >Ferdian Syach Agustian Ramadhan<br />2025</a
+        >
+      </p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
