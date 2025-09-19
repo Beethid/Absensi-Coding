@@ -11,8 +11,3 @@ radios.forEach(radio => {
     }
   });
 });
-
-
-function tombol(){
-    alert("Terkirim")
-}
