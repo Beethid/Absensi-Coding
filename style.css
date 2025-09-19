@@ -45,7 +45,16 @@ body {
   width: 90%;
   border-radius: 20px;
   margin-top: 1rem;
+  cursor: pointer;
   background-color: white;
+  transition: 300ms ease-in-out;
+}
+
+
+.button:hover{
+    transform: scale(1.03) translateY(-3%);
+    background-color: rgb(224, 224, 224);
+
 }
 
 .gambar {
